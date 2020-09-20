@@ -57,7 +57,7 @@ class MyCollection {
 }
 
 const getCollection = () => {
-    const collectionApi = "https://collectionapi.metmuseum.org/public/collection/v1/search?q=sunflowers";
+    const collectionApi = "https://collectionapi.metmuseum.org/public/collection/v1/search?departmentId=11&q=sunflowers&hasImages=true";
     return $.getJSON(collectionApi)
 }
 
