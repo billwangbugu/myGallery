@@ -1,0 +1,128 @@
+body {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  float: right;
+  margin-right: 20px;
+}
+li a {
+  display: block;
+  text-decoration: none;
+}
+
+.favorite,
+.home {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+.favorite:hover,
+.home:hover {
+  background-color: aqua;
+}
+.disabled {
+  background-color: #aaa;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 5%;
+}
+
+.flex-container > div {
+  width: 320px;
+  margin: 10px;
+  text-size-adjust: center;
+  line-height: 22px;
+  font-size: 12px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.flex-container > div img {
+  max-width: 300px;
+  max-height: 300px;
+  padding-top: 10px;
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.metURL {
+  text-decoration: underline;
+}
+.metURL:hover {
+  cursor: pointer;
+  color: blue;
+}
+#collections img:hover {
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+#modalImage {
+  padding: 10px auto;
+  max-width: 80%;
+  max-height: 80vh;
+}
+#modalTitle {
+  font-weight: bold;
+}
+#modalArtist {
+  font-style: italic;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}

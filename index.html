@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel='stylesheet' href="./style.css">
+    <title>Art Collection</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Metropolitan Museum of Art</h1>
+        <nav>
+            <ul>
+                <li>
+                    <div class="favorite">
+                        <a id="myFavorite" href="./myGallery.html">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>My Gallery </span>
+                            <span id="favoriteNum"></span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="home">
+                        <a href="./index.html">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            <span>Master Gallery </span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <content id="collections" class="flex-container"></content>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage">
+            <div id="modalTitle"></div>
+            <div id="modalArtist"></div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
